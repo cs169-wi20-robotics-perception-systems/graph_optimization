@@ -32,12 +32,12 @@ sudo apt install cython libqglviewer-dev libqglviewer2 libsuitesparse-dev python
 git clone https://github.com/uoip/g2opy.git
 ```
 
-Modify 'g2opy' 'CMakeLists.txt', such that 'line 280' should be:
+Modify `g2opy` `CMakeLists.txt`, such that `line 280` should be:
 ```
 INCLUDE_DIRECTORIES(${g2o_SOURCE_DIR} ${EIGEN3_INCLUDE_DIR} /usr/include/python2.7)
 ```
 
-Then in the 'g2opy' directory:
+Then in the `g2opy` directory:
 ```
 mkdir build
 cd build
@@ -71,9 +71,9 @@ roslaunch graph_optimization graph_optimization.launch
 ```
 
 Some parameters that can be set:
-* 'scan_covariance' = \<noise from laser; Default: 4.5\>
-* 'pose_covariance' = \<noise from wheel odometry; Default: 5.5\>
-* 'scan_angle_left' = \<left most angle in radians; Default: pi / 12\>
-* 'scan_angle_right' = \<right most angle in radians; Default: 11 pi / 12\>
-* 'ground_truth_end' = \<true final distance the robot has moved; Default: 0.97\>
-* 'initial_pose' = \<True/False; If true, publish initial pose via 'initialpose' ROS topic. Else, default: 0.36\>
+* `scan_covariance` = \<noise from laser; Default: 4.5\>
+* `pose_covariance` = \<noise from wheel odometry; Default: 5.5\>
+* `scan_angle_left` = \<left most angle in radians; Default: pi / 12\>
+* `scan_angle_right` = \<right most angle in radians; Default: 11 pi / 12\>
+* `ground_truth_end` = \<true final distance the robot has moved; Default: 0.97\>
+* `initial_pose` = \<True/False; If true, publish initial pose via `initialpose` ROS topic. Else, default: 0.36\>

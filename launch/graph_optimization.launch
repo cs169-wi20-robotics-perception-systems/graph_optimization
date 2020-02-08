@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- implement a simple graph optimization -->
+  <node pkg="graph_optimization" name="simple_graph_optimization" type="simple_graph_optimization.py" output="screen" />
+</launch>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>graph_optimization</name>
+  <version>2.2.3</version>
+  <description>
+    Assingment 3: "Graph Optimization" for COSC 169 Robotics Perception Systems
+  </description>
+
+  <maintainer email="monika.roznere.gr@dartmouth.edu">Monika Roznere</maintainer>
+  <author email="monika.roznere.gr@dartmouth.edu">Monika Roznere</author>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>message_filters</build_depend>
+  <build_depend>g2o</build_depend>
+  <build_depend>rospkg</build_depend>
+  <build_depend>numpy</build_depend>
+
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>message_filters</build_export_depend>
+  <build_export_depend>g2o</build_export_depend>
+  <build_export_depend>rospkg</build_export_depend>
+  <build_export_depend>numpy</build_export_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>message_filters</exec_depend>
+  <exec_depend>g2o</exec_depend>
+  <exec_depend>rospkg</exec_depend>
+  <exec_depend>numpy</exec_depend>
+</package>

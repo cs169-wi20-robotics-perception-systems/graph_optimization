@@ -1,0 +1,3 @@
+# ignore data directory
+src/graph_optimization/*.pyc
+data/*

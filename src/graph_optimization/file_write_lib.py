@@ -41,7 +41,7 @@ def append_edge(id_i, id_j, change_in_state, information_matrix, file_name):
         file_name: The path and file name that will be written to.
     """
     f = open(file_name, "a")
-    f.write(format_edge(id_i, id_j, change_in_x, information_matrix) + "\n")
+    f.write(format_edge(id_i, id_j, change_in_state, information_matrix) + "\n")
     f.close()
 
 

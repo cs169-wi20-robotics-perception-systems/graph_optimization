@@ -17,7 +17,6 @@ def plot_state(truth_x, odom_x, optimized_x, time, file_name):
     for i in range(len(time)):
          time[i] = time[i] - time_error
 
-    print(time)
     plt.title("State Estimate Over 1 m")
     plt.ylabel("State")
     plt.xlabel("Time (sec)")

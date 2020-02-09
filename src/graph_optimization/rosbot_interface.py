@@ -17,8 +17,8 @@ class RosbotInterface:
         self.vertex_id = 0
 
         # Sensor covariance values
-        SCAN_COVARIANCE = 4.5  # Default
-        POSE_COVARIANCE = 5.5  # Default
+        SCAN_COVARIANCE = 2.7  # Default
+        POSE_COVARIANCE = 5.0  # Default
         # User may set covariance values
         if rospy.has_param('scan_covariance'):
             SCAN_COVARIANCE = rospy.get_param('scan_covariance')
@@ -47,7 +47,7 @@ class RosbotInterface:
 
         # Parameters for calculating new vertices and edges.
         self.initial_vertex = True
-        self.initial_pose = 0.36
+        self.initial_pose = 0.39
         self.prev_scan_reading = 0.0
         self.prev_pose_reading = 0.0
         # User may set initial pose of the robot
@@ -66,7 +66,7 @@ class RosbotInterface:
         open(self.original_graph_file_name, 'w').close()
 
         # Arrays for storing pose estimates; Used for plotting.
-        self.truth_x = np.array([0.0, 0.97])
+        self.truth_x = np.array([0.17, 0.97])
         # User may set ground truth final value
         if rospy.has_param('ground_truth_end'):
             self.truth_x[1] = rospy.get_param('ground_truth_end')

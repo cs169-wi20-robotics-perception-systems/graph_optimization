@@ -71,9 +71,9 @@ roslaunch graph_optimization graph_optimization.launch
 ```
 
 Some parameters that can be set:
-* `scan_covariance` = \<noise from laser; Default: 2.7\>
-* `pose_covariance` = \<noise from wheel odometry; Default: 5.0\>
+* `scan_covariance` = \<noise from laser; Default: 1.5\>
+* `pose_covariance` = \<noise from wheel odometry; Default: 1.0\>
 * `scan_angle_left` = \<left most angle in radians; Default: pi / 12\>
 * `scan_angle_right` = \<right most angle in radians; Default: 11 pi / 12\>
 * `ground_truth_end` = \<true final distance the robot has moved; Default: 0.97\>
-* `initial_pose` = \<True/False; If true, publish initial pose via `initialpose` ROS topic. Else, default: 0.39\>
+* `initial_pose` = \<True/False; If true, publish initial pose via `initialpose` ROS topic. Else, default: 0.396>

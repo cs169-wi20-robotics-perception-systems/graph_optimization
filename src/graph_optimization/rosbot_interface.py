@@ -74,8 +74,8 @@ class RosbotInterface:
         self.odom_x = []
         self.odom_time = []
         self.optimized_x = []
-        self.state_plot_file_name = self.data_file_path + "state_plot.svg"
-        self.error_plot_file_name = self.data_file_path + "error_plot.svg"
+        self.state_plot_file_name = self.data_file_path + "state_plot.png"
+        self.error_plot_file_name = self.data_file_path + "error_plot.png"
 
         rospy.on_shutdown(self.shutdown)
 
